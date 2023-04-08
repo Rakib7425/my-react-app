@@ -67,17 +67,17 @@ export default function Form(props) {
                 onChange={handleOnChange}
               ></textarea>
               <h3>
-                <small class="text-body-primary  ">
+                <small className="text-body-primary  ">
                   Words Count & Characters count
                 </small>
               </h3>
-              <div class="alert alert-secondary " role="alert"> Number of Words {text.split(" ").length} & Number of characters {text.length} Can Be Read in {0.008* text.split(" ").length}</div>
+              <div className="alert alert-secondary " role="alert"> Number of Words {text.split(" ").length} & Number of characters {text.length} Can Be Read in {0.008* text.split(" ").length} (for machine) </div>
               <h3>
-                <small class="text-body-primary  ">
+                <small className="text-body-primary  ">
                  Preview
                 </small>
               </h3>
-              <div class="alert alert-secondary " role="alert">{text}</div>
+              <div className="alert alert-secondary " role="alert">{text}</div>
             </div>
             <button
               type="button"

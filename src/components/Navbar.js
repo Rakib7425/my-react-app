@@ -1,9 +1,11 @@
 import React from "react";
 // import Navbarstyle.css from ".././components_css"
 // import Navbarstyless from "../components_css/Navbarstyle.css";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
+import About from "./About";
 
-const navbar = (props) => {
+
+const navbar = () => {
   return (
     <>
       <div className="container" id="form-container-background">
@@ -15,7 +17,7 @@ const navbar = (props) => {
             >
               <div className="container-fluid">
                 <a className="navbar-brand" href="/">
-                  {props.title}
+                  TextUtils
                 </a>
                 <button
                   className="navbar-toggler"
@@ -43,12 +45,11 @@ const navbar = (props) => {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link " href="/">
-                        {props.aboutItem}
+                      <a  href='/about' className="nav-link "> 
                       </a>
                     </li>
                   </ul>
-                  <form className="d-flex" role="search">
+                  {/* <form className="d-flex" role="search">
                     <input
                       className="form-control me-2"
                       type="search"
@@ -57,8 +58,8 @@ const navbar = (props) => {
                     />
                     <button className="btn btn-outline-success" type="submit">
                       Search
-                    </button>
-                  </form>
+                    </button> 
+                   </form> */}
                 </div>
               </div>
             </nav>
@@ -70,10 +71,10 @@ const navbar = (props) => {
 };
 
 export default navbar;
-navbar.propTypes = { title: PropTypes.string, aboutItem: PropTypes.string };
+// navbar.propTypes = { title: PropTypes.string};
 
-// Specifies the default values for props:
-navbar.defaultProps = {
-  title: "Enter you title here",
-  aboutItem: "Enter your about here",
-};
+// // Specifies the default values for props:
+// navbar.defaultProps = {
+//   title: "Enter you title here"
+//   // aboutItem: "Enter your about here",
+// };
