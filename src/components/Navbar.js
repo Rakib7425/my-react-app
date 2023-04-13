@@ -40,7 +40,7 @@ export default function Example() {
    );
 
    return (
-      <Navbar className='mx-auto max-w-screen-xl py-1 px-4 lg:px-8 lg:py-4 bg-lime-500 rounded-md shadow-2xl'>
+      <Navbar className=' w-screen mx-auto py-1 px-4 lg:px-8 lg:py-4 bg-lime-500 rounded-md shadow-2xl'>
          <div className='container mx-auto flex items-center justify-between text-blue-gray-900'>
             <Typography
                as='a'

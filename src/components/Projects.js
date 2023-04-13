@@ -6,6 +6,7 @@ const Projects = () => {
         <div className="h-auto w-full text-center text-red-600">
 
             <div>Projects</div>
+
         </div>
         </>
     )
