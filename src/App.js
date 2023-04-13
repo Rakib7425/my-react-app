@@ -1,20 +1,27 @@
-
-import './App.css';
-import Form from './components/Form';
-import Navbar from './components/Navbar';
-// import Navbarstyless from "./components_css/Navbarstyle.css"
-// import About from './components/About';
+import "./App.css";
+import Form from "./components/Form";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contacts from "./components/Contacts";
 
 function App() {
-  return (
-    <>
-    <Navbar/>
-    {/* <About/> */}
-    {/* <Navbar/> */}
-
-    <Form Heading="Enter Your Text"/>
-    </>
-  );
+   return (
+      <>
+         <Router>
+            <div className=''>
+               <Navbar />
+               <Routes>
+                  <Route path='/' element={<Form />} />
+                  <Route path='about' element={<About />} />
+                  <Route path='projects' element={<Projects />} />
+                  <Route path='contacts' element={<Contacts />} />
+               </Routes>
+            </div>
+         </Router>
+      </>
+   );
 }
 
 export default App;

@@ -1,8 +1,8 @@
-
-  .App {
+.App {
   text-align: center;
-  /* background-color: bisque; */
+  background-color: rgb(47, 201, 228);
 }
-#form-container-background{
+
+#form-container-background {
   background-color: bisque;
 }

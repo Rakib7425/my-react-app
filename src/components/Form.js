@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
+
 export default function Form(props) {
   const handleOnChange = (event) => {
     // console.log("On change");
@@ -47,7 +48,7 @@ export default function Form(props) {
   // setText("I am Your bf ")
   return (
     <>
-      <div className="container" id="form-container-background">
+      <div className="container max-w-[90%] text-2xl min-h-full rounded-md shadow-2xl" id="form-container-background">
         <div className="row">
           <div className="col-12">
             <div className="mb-3">
